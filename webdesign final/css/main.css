@@ -1,0 +1,365 @@
+
+/* START OF EXAMPLE */
+
+
+/* * {
+  border: 1px solid magenta;
+} */
+
+body {
+  background-color: grey;
+  font-size: 10px;
+
+  /* Setting margin and padding to zero, your divs now stretch the full width
+  and height of the viewport. */
+  margin: 0;
+  padding: 0;
+}
+
+
+
+#turquoisebox {
+  min-height: 100vh;
+  min-width:100vh;
+  background-color: turquoise;
+  position: relative;
+}
+
+.big-header {
+  position: absolute;
+  top: 45vh;
+  width: 100%;
+  height: 5vh;
+  text-align: center;
+  font: AbrilFatface;
+  left: 7vw;
+  bottom: 70vh;
+color: white;
+  /* In body, the font-size is defined at 10px, so
+  8rem, or ROOT EMs is 8x10 = 80px.
+  If the root font-size changes, say, to adapt to mobile,
+  fonts defined using rems will change proportionally. */
+  font-size: 4rem;
+  z-index: 1;
+}
+
+.screen-1-imgs{
+  position: absolute;
+  max-height: 100vh;
+  width: auto;
+}
+
+
+
+.middle-right {
+  bottom: 0;
+  right: 10vw;
+
+}
+
+.bottom-right {
+  bottom: 0;
+  right: -10vh;
+}
+
+.bottom-left {
+  bottom: 0;
+  left: 10vw;
+}
+
+
+/* ANIMATIONS */
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  20% { opacity: 0.2; }
+  40% { opacity: 0.4; }
+  60% { opacity: 0.6; }
+  80% { opacity: 0.8; }
+  100% { opacity: 1; }
+}
+
+.big-header {
+  animation: fadeIn 8s;
+
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  10% { opacity: 0.1; }
+  20% { opacity: 0.2; }
+  30% { opacity: 0.3; }
+  40% { opacity: 0.4; }
+  50% { opacity: 0.5; }
+  60% { opacity: 0.6; }
+  70% { opacity: 0.7; }
+  80% { opacity: 0.8; }
+  90% { opacity: 0.9; }
+  100% { opacity: 1; }
+}
+
+#face1 {
+  animation: fadeIn 2s;
+
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  10% { opacity: 0; }
+  20% { opacity: 0; }
+  30% { opacity: 0; }
+  40% { opacity: 0; }
+  50% { opacity: 0; }
+  60% { opacity: 0.2; }
+  70% { opacity: 0.4; }
+  80% { opacity: 0.6; }
+  90% { opacity: 0.8; }
+  100% { opacity: 1; }
+}
+
+#face2 {
+  animation: fadeIn 4s;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  10% { opacity: 0; }
+  20% { opacity: 0; }
+  30% { opacity: 0; }
+  40% { opacity: 0; }
+  50% { opacity: 0; }
+  60% { opacity: 0; }
+  70% { opacity: 0; }
+  80% { opacity: 0.6; }
+  90% { opacity: 0.8; }
+  100% { opacity: 1; }
+}
+
+#face3 {
+  animation: fadeIn 6s;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  10% { opacity: 0; }
+  20% { opacity: 0; }
+  30% { opacity: 0; }
+  40% { opacity: 0; }
+  50% { opacity: 0; }
+  60% { opacity: 0; }
+  70% { opacity: 0; }
+  80% { opacity: 0; }
+  90% { opacity: 0.8; }
+  100% { opacity: 1; }
+}
+
+#face4 {
+  animation: fadeIn 8s;
+}
+/* END OF EXAMPLE */
+
+#redbox {
+  min-height: 100vh;
+  min-width: 100vh;
+  background-color: red;
+  position: relative;
+  overflow: hidden;
+}
+#car {
+  position: absolute;
+  bottom: 5vh;
+  left: 3vw;
+  width: 25vw;
+  z-index: 1;
+}
+#road {
+  height: 100vh;
+  width: auto;
+  left: 12vw;
+  position: absolute;
+  width: 16vw;
+  z-index: 1;
+}
+#red-head-1 {
+  height: 100vh;
+  top: 10vw;
+  margin-top: -30vh;
+  position: absolute;
+  left: 0;
+}
+#red-head-2 {
+  height: 120vh;
+  top: 10vw;
+  margin-top: -30vh;
+  position: absolute;
+  right: 0;
+}
+
+
+
+
+@keyframes driving {
+
+
+        10% {
+            bottom: 10%;
+            left: 5%;
+        }
+        20% {
+
+            bottom: 20%;
+            right: 15%
+        }
+        35% { bottom: 30%
+            left: 5%;
+            );
+        }
+        40% {
+            bottom: 40%;
+            right: 5%
+
+        }
+        50% {
+
+            bottom: 60%;
+              left: 5%;
+        }
+        60% { bottom: 70%
+         right: 5%
+        }
+        70% {
+            bottom: 80%;
+              left: 5%;
+        }
+        80% {
+            bottom: 90%;
+            right: 5%
+
+        }
+        90% {
+
+            bottom: 100%;
+              left: 5%;
+        }
+        100% { bottom: 70%
+         right: 5%
+        }
+
+
+    }
+
+    #car {
+      animation: driving 1s;
+      animation-iteration-count: infinite;
+    }
+
+/* NEXT BOX  */
+
+#yellowbox {
+  min-height: 100vh;
+  min-width: 100vh;
+background-color: yellow;
+
+}
+
+/* NEXT BOX  */
+
+#lightbluebox {
+  min-height: 100vh;
+  min-width: 100vh;
+  background-color: #6195c3;
+  overflow: hidden;
+  position: relative;
+
+}
+
+#head1 {
+  height: 120vh;
+  position: absolute;
+  left: -6vw;
+
+}
+
+#head2{
+  height: 120vh;
+
+  position: absolute;
+  right: 30vw;
+
+}
+
+#head3 {
+  height: 120vh;
+  position: absolute;
+  right: -20px;
+
+}
+
+
+
+
+#inhead1 {
+
+  height: 30vh;
+  width: 50vw;
+  position: relative;
+  left: -10vw;
+  top: 10vh;
+}
+
+
+
+
+#inhead2 {
+  height: 30vh;
+  width: 50vw;
+  position: relative;
+  right: -25vw;
+  bottom: 20vh;
+
+}
+
+
+#inhead3{
+  height: 30vh;
+  width: 50vw;
+  position: relative;
+  right: -60vw;
+  bottom: 50vh;
+
+}
+
+/* ANIMATIONS*/
+
+@keyframes pulse_animation {
+    0% { transform: scale(1); }
+    30% { transform: scale(1.08); }
+    40% { transform: scale(1); }
+    50% { transform: scale(1.08); }
+    60% { transform: scale(1); }
+    70% { transform: scale(1.08); }
+    80% { transform: scale(1); }
+    100% { transform: scale(1); }
+}
+.insidehead {
+    animation-name: pulse_animation;
+    animation-duration: 2s;
+    transform-origin:70% 70%;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+
+.maniatext{
+    position: absolute;
+    top: 4vh;
+    width: 100%;
+    height: 5vh;
+    text-align: center;
+    font: AbrilFatface;
+    left: 30vw;
+    bottom: 70vh;
+  color: white;
+  font-size: 50px;
+  z-index: 1;
+}
